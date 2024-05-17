@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Industry Website</title>
     <link rel="stylesheet" href="food_home.css">
+    <script src="java.js" defer></script>
 </head>
 <body>
     <header>
@@ -37,71 +38,92 @@
 
     <section class="menu" id="gallery">
         <div class="menu-heading">
-            <strong>MENU</strong>
+           <strong>MENU</strong>
         </div>
+
         <div class="product-container">
-            <div class="product-box">
-                <div class="product-img">
-                    <a href="food_y1.html"><img src="y1.png"></a>
-                </div>
+            <div class="product" data-name="1">
+               <img src="y1.png" alt="">
+               <h3>YES with Java Rice</h3>
+               <div class="price">Php 95.00</div>
             </div>
-            <div class="product-box">
-                <div class="product-img">
-                    <a href="food_y2.html"><img src="y2.png"></a>
-                </div>
+         
+            <div class="product" data-name="2">
+               <img src="y2.png" alt="">
+               <h3>YES na YES with Java Rice</h3>
+               <div class="price">Php 139.00</div>
             </div>
-            <div class="product-box">
-                <div class="product-img">
-                    <img src="y3.png">
-                </div>
+
+            <div class="product" data-name="3">
+               <img src="y3.png" alt="">
+               <h3>YES + HOTDOG with Java Rice</h3>
+               <div class="price">Php 129.00</div>
             </div>
-            <div class="product-box">
-                <div class="product-img">
-                    <img src="y4.png">
-                </div>
+
+            <div class="product" data-name="4">
+               <img src="y4.png" alt="">
+               <h3>YES + TENGA with Java Rice</h3>
+               <div class="price">Php 129.00</div>
             </div>
-            <div class="product-box">
-                <div class="product-img">
-                    <img src="y5.png">
-                </div>
+            
+            <div class="product" data-name="5">
+               <img src="y5.png" alt="">
+               <h3>YES + ISAW BABOY with Java Rice</h3>
+               <div class="price">Php 129.00</div>
+            </div>   
+
+            <div class="product" data-name="6">
+               <img src="y6.png" alt="">
+               <h3>YES + ISAW MANOK with Java Rice</h3>
+               <div class="price">Php 129.00</div>
             </div>
-            <div class="product-box">
-                <div class="product-img">
-                    <img src="y6.png">
-                </div>
+            
+            <div class="product" data-name="7">
+               <img src="y7.png" alt="">
+               <h3>YES with FRIENDS</h3>
+               <div class="price">Php 235.00</div>
+            </div>   
+
+            <div class="product" data-name="8">
+               <img src="y8.png" alt="">
+               <h3>INIHAW na LIEMPO with Java Rice</h3>
+               <div class="price">Php 229.00</div>
+            </div>   
+
+            <div class="product" data-name="9">
+               <img src="y9.png" alt="">
+               <h3>CHICKEN BBQ (Leg Quarter) with Java Rice</h3>
+               <div class="price">Php 175.00</div>
+            </div>   
+
+            <div class="product" data-name="10">
+               <img src="y10.png" alt="">
+               <h3>INIHAW na PORKCHOP with Java Rice</h3>
+               <div class="price">Php 125.00</div>
             </div>
-            <div class="product-box">
-                <div class="product-img">
-                    <img src="y7.png">
-                </div>
+            
+            <div class="product" data-name="11">
+               <img src="y11.png" alt="">
+               <h3>YES + ISAW BILOG with Java Rice</h3>
+               <div class="price">Php 135.00</div>
+            </div>   
+
+            <div class="product" data-name="13">
+               <img src="y13.png" alt="">
+               <h3>YES + BULAKLAK with Java Rice</h3>
+               <div class="price">Php 129.00</div>
             </div>
-            <div class="product-box">
-                <div class="product-img">
-                    <img src="y8.png">
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="product-img">
-                    <img src="y9.png">
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="product-img">
-                    <img src="y10.png">
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="product-img">
-                    <img src="y11.png">
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="product-img">
-                    <img src="y13.png">
-                </div>
-            </div>
-        </div>
+         </div> 
     </section>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img id="modalImg" src="" alt="">
+            <h3 id="modalTitle"></h3>
+            <div id="modalPrice"></div>
+        </div>
+    </div>
 
     <footer>
         <div class="contact-info">
