@@ -150,7 +150,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10%;
+    padding-top: 8%;
     flex-direction: column;
     cursor: pointer;
 }
@@ -163,7 +163,7 @@ header {
     justify-content: center;
 }
 
-.product-box{
+.product{
     background-color: #59354b;
     border: 1px solid #29021a;
     border-radius: 10px;
@@ -171,20 +171,17 @@ header {
     padding: 35px 15px;
 }
 
-.product-box:hover{
+.product:hover{
     box-shadow: 2px 2px 30px #3a0326;
     cursor: pointer;
 }
 
-.product-img{
-    max-width: 100%;
-    margin-left: 25%;
-}
-.product-img img{
+.product img{
     max-width: 100%;
     object-fit: contain;
     object-position: center;
     border-radius: 10px;
+    margin-left: 20%;
 }
 
 footer {
@@ -196,6 +193,7 @@ footer {
     bottom: 0;
     width: 100%;
     display: flex;
+    z-index: 100;
     justify-content: space-between;
     align-items: center;
     padding: 0px 45px;
@@ -205,6 +203,7 @@ footer {
 }
 .contact-info p {
     margin: 0;
+    font-size: 20px;
     text-align: left;
 }
 .contact-info img{
@@ -239,7 +238,7 @@ footer {
 .details{
     background-color: #b28ba7;
     width: 100%;
-    height: 73vh;
+    height: 77vh;
     display: flex;
     justify-content: center;
     padding-top: 30px;
@@ -266,6 +265,7 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    margin-top: 5%;
 }
 
 .menu-item-detail img {
@@ -274,21 +274,56 @@ footer {
     margin-bottom: 20px;
 }
 
-h2{
+h3{
     font-family: 'Courier New', Courier, monospace;
     font-size: 30px;
     font-weight: 600;
     text-decoration: underline;
+    text-align: center;
+    color: #b7afb5;
 }
 
-h3{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
-}
-
-.description {
+.price{
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     font-weight: 600;
     text-align: center;
+    color: #a79caa;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #352f37;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 500px;
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: rgb(203, 18, 18);
+    text-decoration: none;
+    cursor: pointer;
 }
